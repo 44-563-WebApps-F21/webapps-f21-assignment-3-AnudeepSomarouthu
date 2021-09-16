@@ -71,7 +71,31 @@
     <td>3$</td>
 </tr>
 </table>
-
+<hr>
+<h2> Data Structure</h2>
+<blockquote>
+    Data Structures (DS) tutorial provides basic and advanced concepts of Data Structure. Our Data Structure tutorial is designed for beginners and professionals.Data Structure is a way to store and organize data so that it can be used efficiently.
+</blockquote>
+<a href="https://www.javatpoint.com/data-structure-tutorial">Detailed SourceCode</a><br>
+<pre>
+    void make_set(int v) {
+        parent[v] = v;
+    }
+    
+    int find_set(int v) {
+        if (v == parent[v])
+            return v;
+        return find_set(parent[v]);
+    }
+    
+    void union_sets(int a, int b) {
+        a = find_set(a);
+        b = find_set(b);
+        if (a != b)
+            parent[b] = a;
+    }
+</pre>
+<a href="https://cp-algorithms.com/data_structures/disjoint_set_union.html">SourceCode</a><br>
     
 </body>
 </html>
